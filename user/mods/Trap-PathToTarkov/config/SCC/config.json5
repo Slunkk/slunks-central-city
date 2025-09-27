@@ -1,0 +1,846 @@
+{
+  initial_offraid_position: 'BasementDescent',
+  respawn_at: ['BasementDescent'],
+  enable_automatic_transits_creation: true,
+  enable_all_vanilla_transits: false,
+  restrictions_in_raid: {
+    // roubles
+    '5449016a4bdc2d6f028b456f': {
+      Value: 100000000,
+    },
+    // dollars
+    '5696686a4bdc2da3298b456a': {
+      Value: 1000000,
+    },
+    // euros
+    '569668774bdc2da2298b4568': {
+      Value: 1000000,
+    },
+    // case key
+    '67449b6c89d5e1ddc603f504': {
+      Value: 42,
+    },
+    // locked case
+    '6740987b89d5e1ddc603f4f0': {
+      Value: 10,
+    },
+  },
+  offraid_regen_config: {
+    hydration: {
+      access_via: ['BasementDescent'],
+    },
+    energy: {
+      access_via: ['BasementDescent'],
+    },
+    health: {
+      access_via: [
+        'BasementDescent',
+      ],
+    },
+  },
+  hideout_main_stash_access_via: ['BasementDescent'],
+  hideout_secondary_stashes: [
+    {
+      id: 'Woods_Bridge_To_Port',
+      size: 48,
+      access_via: ['WoodsBridgeToPort'],
+    },
+    {
+      id: 'Therapist_Hideout',
+      size: 48,
+      access_via: ['JagerHideout'],
+    },
+    {
+      id: 'Mechanic_Hideout',
+      size: 48,
+      access_via: ['MechanicHideout'],
+    },
+    {
+      id: 'Interchange_Crossroad',
+      size: 48,
+      access_via: ['SkiersHideout'],
+    },
+    {
+      id: 'Ragman_Hideout',
+      size: 48,
+      access_via: ['RagmanHideout'],
+    },
+    {
+      id: 'Peacekeeper_Hideout',
+      size: 48,
+      access_via: ['PeacekeeperHideout'],
+    },
+    {
+      id: 'Passage_To_Wood_Outskirts',
+      size: 48,
+      access_via: ['PassageToWoodOutskirts'],
+    },
+    {
+      id: 'Ref_Hideout',
+      size: 48,
+      access_via: ['RefHideout'],
+    },
+    {
+      id: 'Village_Path',
+      size: 48,
+      access_via: ['VillagePath'],
+    },
+	{
+      id: 'Scorpion_Hideout',
+      size: 48,
+      access_via: ['ScorpionHideout'],
+    },
+	{
+      id: 'Coyote_Hideout',
+      size: 48,
+      access_via: ['CoyoteHideout'],
+    },
+	{
+      id: 'Guiding_LightHouse',
+      size: 48,
+      access_via: ['GuidingLightHouse'],
+    },
+	{
+      id: 'Nakatani_Casino_Elevator',
+      size: 48,
+      access_via: ['NakataniCasinoElevator'],
+    },
+	{
+      id: 'Jiang_Hu',
+      size: 48,
+      access_via: ['JiangHu'],
+    },
+	{
+      id: 'Vent_Shaft_Cat',
+      size: 48,
+      access_via: ['VentShaftCat'],
+    },
+  ],
+  traders_config: {
+    // Prapor
+    '54cb50c76803fa8b248b4571': {
+      access_via: ['PassageToWoodOutskirts'],
+    },
+    // Therapist
+    '54cb57776803fa99248b456e': {
+      access_via: ['WoodsBridgeToPort'],
+    },
+    // Mechanic
+    '5a7c2eca46aef81a7ca2145d': {
+      access_via: ['MechanicHideout'],
+    },
+    // Skier
+    '58330581ace78e27b8b10cee': {
+      access_via: ['SkiersHideout'],
+    },
+    // Ragman
+    '5ac3b934156ae10c4430e83c': {
+      access_via: ['RagmanHideout'],
+    },
+    // Jaeger
+    '5c0647fdd443bc2504c2d371': {
+      access_via: ['JagerHideout'],
+    },
+    // Peacekeeper
+    '5935c25fb3acc3127c3d8cd9': {
+      access_via: ['PeacekeeperHideout'],
+    },
+    // Fence
+    '579dc571d53a0658a154fbec': {
+      access_via: '*',
+      insurance_always_enabled: true,
+      insurance_config: {
+        insurance_price_coef: 25,
+        min_payment: 0,
+        min_return_hour: 0,
+        max_return_hour: 0,
+        max_storage_time: 480,
+        return_chance_percent: 50,
+      },
+      repair_always_enabled: true,
+      repair_config: {
+        quality: 1,
+        currency: '5449016a4bdc2d6f028b456f',
+        currency_coefficient: 12,
+        repair_price_coef: 0,
+      },
+      heal_always_enabled: true,
+	  access_via: ['BasementDescent'],
+    },
+    // Ref (arena)
+    '6617beeaa9cfa777ca915b7c': {
+      access_via: ['RefHideout'],
+	},
+	// lotus
+    '6747208ef022cbbfc65c41bf': {
+      access_via: ['VillagePath'],
+    },
+	// Scorpion
+    '6688d464bc40c867f60e7d7e': {
+      access_via: ['ScorpionHideout'],
+    },
+	// Coyote (on legacy SPT versions)
+    '67b656f8b32c5563e5089915': {
+      access_via: ['CoyoteHideout'],
+    },
+	// GuidingLight
+    '674964e1ff0cf3b00b461857': {
+      access_via: ['GuidingLightHouse'],
+    },
+	// ???
+    '674964e72eae32de73a09d41': {
+      access_via: ['GuidingLightHouse'],
+    },
+	// Cat Burglar
+    '67635a00fec1f22d67d76870': {
+      access_via: ['VentShaftCat'],
+    },
+	// Harry
+    '67419e9d0d4541ce671543bb': {
+      access_via: ['RagmanHideout'],
+    },
+	// painter
+    '668aaff35fd574b6dcc4a686': {
+      access_via: ['RefHideout'],
+    },
+	// Gambler
+    '67b7b52a4767af842e0521d0': {
+      access_via: ['BasementDescent'],
+    },
+	// Oni
+    '682dc1fc999c34e21413c671': {
+      access_via: ['VillagePath'],
+    },
+	// Legs
+    '6748edbcb936f1098d4303e4': {
+      access_via: ['MechanicHideout'],
+    },
+	// Artem
+    '66bf757f27d0b097db0acea5': {
+      access_via: ['ScorpionHideout'],
+    },
+	// Tony
+    '66eeef8b2a166b73d2066a7e': {
+      access_via: ['MechanicHideout'],
+    },
+	// Anastasia
+    '678937229797bd983dca2137': {
+      access_via: ['JagerHideout'],
+    },
+	// Evelyn
+    '6789373b0f5ecebf0bc152d5': {
+      access_via: ['JagerHideout'],
+    },
+	// Svitlana
+    '6789374aebcb3ad4c6e073bd': {
+      access_via: ['JagerHideout'],
+    },
+	// EPAKIM
+    '67b67103b32c5563e508998a': {
+      access_via: ['VillagePath'],
+    },
+	// Requisition
+    '66f0eaa93f6cc015bc1f3acb': {
+      access_via: ['PassageToWoodOutskirts'],
+    },
+	// Saria
+    '66f4db5ca4958508883d700c': {
+      access_via: ['WoodsBridgeToPort'],
+    },
+	// Frostbite
+    '66ef9505bede6c894d6b47bd': {
+      access_via: ['JagerHideout'],
+    },
+	// Gunsmith
+    '4e7ef752240141bca059b2ea': {
+      access_via: ['RefHideout'],
+    },
+	// Scav Cat
+    '67dae9c254023e4f20bac54f': {
+      access_via: ['VentShaftCat'],
+    },
+	// Priscilus
+    '6748adca5c70634464b214a8': {
+      access_via: ['PassageToWoodOutskirts'],
+    },
+	// AAT
+    '637ace38260ffaa1bd63047f': {
+      access_via: ['RagmanHideout'],
+    },
+	// Croupier
+    '1337bb0dd843363fcd1be869': {
+      access_via: ['BasementDescent'],
+    },
+	// Couturier
+    '66eeef8b2a166b73dc0671e8': {
+      access_via: ['SkiersHideout'],
+    },
+	// Chef
+    '68574d007aaa13f9fe07a5bb': {
+      access_via: ['RagmanHideout'],
+    },
+	// Volkov
+    '67ae94fcc9ba3302b328c2f7': {
+      access_via: ['BasementDescent'],
+    },
+	// Badger
+    'bd3a8b28356d9c6509966546': {
+      access_via: ['CoyoteHideout'],
+    },
+	// Jiang Hu
+    'e983002c4ab4d99999888000': {
+      access_via: ['JiangHu'],
+    },
+    // Flea Market (Ragfair)
+    ragfair: {
+      access_via: ['BasementDescent'],
+    },
+  },
+  
+  
+  exfiltrations: {
+    tarkovstreets: {
+      Exit_E10_coop: ['BasementDescent'],
+	  E1: ['NakataniCasinoElevator'],
+	  E2: ['SewerToFactory'],
+	  scav_e8: ['KlimovShoppingMallExfil'],
+	  scav_e7: ['GroundZeroSniper'],
+	  scav_e5: ['LighthouseKamchatskayaArch'],
+	  E3: ['CustomsRAUFStreets'],
+	  E8_yard: ['UNSawmillStreetsAccess'],
+	  E7_car: ['PrimorskyScavTownTaxi'],
+	  E4: ['CityCrashToResort'],
+	  E9_sniper: ['KlimovSniperReserveAccess'],
+    },
+    interchange: {
+      'NW Exfil': ['KlimovShoppingMallExfil'],
+	  'PP Exfil': ['MallCar'],
+	  'SE Exfil': ['DormShoppingCar'],
+	  'Hole Exfill': ['RagmanHideout'],
+	  'Saferoom Exfil': ['SaferoomLabAccess'],
+    },
+    sandbox: {
+      Nakatani_stairs_free_exit: ['NakataniCasinoElevator'],
+	  Sandbox_VExit: ['MallCar'],
+	  Scav_coop_exit: ['LighthouseCityCheckpoint'],
+	  Unity_free_exit: ['MechanicHideout'],
+	  Sniper_exit: ['MiraSniperReserveAccess'],
+    },
+    lighthouse: {
+	  Nothern_Checkpoint: ['LighthouseCityCheckpoint'],
+	  ' V-Ex_light': ['LighthouseKamchatskayaArch'],
+	  Coastal_South_Road: ['CoastalRoad'],
+	  Shorl_free_scav: ['VillagePath'],
+	  Scav_Hideout_at_the_grotto: ['JiangHu'],
+	  tunnel_shared: ['MilitaryTunnel'],
+    },
+    bigmap: {
+	  'RUAF Roadblock': ['CustomsRAUFStreets'],
+	  'Trailer Park': ['SkiersHideout'],
+	  'Dorms V-Ex': ['DormShoppingCar'],
+	  'Shack': ['PassageToWoodOutskirts'],
+	  'Old Azs Gate': ['GasWoodsBlock'],
+	  "ZB-1011": ['FactoryToCustoms'],
+	  "EXFIL_ZB013": ['CustomsLabsAccess'],
+    },
+    woods: {
+	  'Outskirts': ['PassageToWoodOutskirts'],
+	  'RUAF Roadblock': ['FactoryToWoods'],
+	  'UN Roadblock': ['GasWoodsBlock'],
+	  'un-sec': ['UNSawmillStreetsAccess'],
+	  'South V-Ex': ['PrimorskyScavTownTaxi'],
+	  'Factory Gate': ['WoodsBridgeToPort'],
+	  'Mountain Stash': ['ScorpionHideout'],
+	  'ZB-014': ['WoodsLabAccess'],
+	  'wood_sniper_exit': ['WoodSniperReserveAccess'],
+    },
+    rezervbase: {
+	  'Exit3': ['MilitaryTunnel'],
+	  'EXFIL_Bunker_D2': ['D2LabAccess'],
+	  'Alpinist': ['JagerHideout'],
+    },
+    factory4_day: {
+      'Gate 3': ['FactoryToWoods'],
+      'Gate 0': ['FactoryToCustoms'],
+	  'Gate_o': ['RefHideout'],
+	  'Cellars': ['FactoryLabAccess'],
+    },
+    factory4_night: {
+      'Gate 3': ['FactoryToWoods'],
+      'Gate 0': ['FactoryToCustoms'],
+	  'Gate_o': ['RefHideout'],
+	  'Cellars': ['FactoryLabAccess'],
+    },
+    shoreline: {
+	  Road_at_railbridge: ['WoodsBridgeToPort'],
+	  'Shorl_V-Ex': ['CityCrashToResort'],
+	  'Wrecked Road': ['CoastalRoad'],
+	  Lighthouse_pass: ['VillagePath'],
+	  'Lighthouse': ['GuidingLightHouse'],
+    },
+	laboratory: {
+	  'lab_Under_Storage_Collector': ['D2LabAccess'],
+	  'lab_Elevator_Cargo': ['PeacekeeperHideout'],
+      lab_Elevator_Main: ['PeacekeeperHideout'],
+      lab_Elevator_Med: ['PeacekeeperHideout'],
+	  lab_Hangar_Gate: ['CoyoteHideout'],
+      lab_Parking_Gate: ['CoyoteHideout'],
+      lab_Vent: ['VentShaftCat'],
+    },
+  },
+  infiltrations: {
+    GroundZeroSniper: {
+      sandbox: ['GroundZeroRampInfil'],
+    },
+	SewerToFactory: {
+      factory4_day: ['FactorySewerDay'],
+	  factory4_night: ['FactorySewerNight'],
+    },
+	BasementDescent: {
+      tarkovstreets: ['BasementHideoutInfil'],
+    },
+    KlimovShoppingMallExfil: {
+      interchange: ['Railway'],
+      tarkovstreets: ['Klimov Street'],
+    },
+    NakataniCasinoElevator: {
+      sandbox: ['Nakatani Basement Stairs'],
+      tarkovstreets: ['Stylobate Elevator'],
+    },
+    MallCar: {
+      sandbox: ['Police Car'],
+      interchange: ['Interchange Vehicle Extract'],
+    },
+    LighthouseCityCheckpoint: {
+      sandbox: ['Scav Hideout'],
+      lighthouse: ['Northern CP'],
+    },
+    LighthouseKamchatskayaArch: {
+      tarkovstreets: ['Kamchatskaya Arch'],
+      lighthouse: ['Lighthouse Vehicle Extract'],
+    },
+    CustomsRAUFStreets: {
+      tarkovstreets: ['Streets Ruined House'],
+      bigmap: ['RUAF Roadblock'],
+    },
+    SkiersHideout: {
+      bigmap: ['Trailer Park Workers Shack'],
+	  interchange: ['Scav Camp'],
+    },
+	DormShoppingCar: {
+      interchange: ['Emercom'],
+      bigmap: ['Dorms Car'],
+    },
+	PassageToWoodOutskirts: {
+      woods: ['Outskirts'],
+      bigmap: ['Military Base CP'],
+    },
+	GasWoodsBlock: {
+      woods: ['UN Roadblock'],
+      bigmap: ['Old Gas Scav'],
+    },
+	FactoryToCustoms: {
+      factory4_day: ['Transit to Customs'],
+	  factory4_night: ['Transit to Customs'],
+      bigmap: ['ZB-1011'],
+    },
+	FactoryToWoods: {
+      woods: ['RUAF Gate'],
+      factory4_day: ['Transit to Customs'],
+	  factory4_night: ['Transit to Customs'],
+    },
+	UNSawmillStreetsAccess: {
+      woods: ['Northern UN Roadblock'],
+	  tarkovstreets: ['CourtyardInfil'],
+    },
+	PrimorskyScavTownTaxi: {
+      woods: ['Woods Vehicle Extract'],
+	  tarkovstreets: ['Streets Vehicle Extract'],
+    },
+	WoodsBridgeToPort: {
+      woods: ['Scav Bridge'],
+	  shoreline: ['Railway Bridge'],
+    },
+	CityCrashToResort: {
+      shoreline: ['Shoreline Vehicle Extract'],
+	  tarkovstreets: ['Crash Site'],
+    },
+	VillagePath: {
+      lighthouse: ['Path to Shoreline'],
+	  shoreline: ['Path to Lighthouse'],
+    },
+	CoastalRoad: {
+	  lighthouse: ['Southern Road'],
+	  shoreline: ['Ruined Road'],
+    },
+	MilitaryTunnel: {
+	  lighthouse: ['Lighthouse Tunnel'],
+	  rezervbase: ['Depot Hermetic'],
+    },
+	D2LabAccess: {
+	  laboratory: ['Lab Sewage Conduit'],
+	  rezervbase: ['D-2'],
+    },
+	RagmanHideout: {
+	  interchange: ['Fence Gap'],
+    },
+	RefHideout: {
+	  factory4_day: ['Courtyard'],
+	  factory4_night: ['Courtyard'],
+    },
+	ScorpionHideout: {
+	  woods: ['Mountain Stash'],
+    },
+	MechanicHideout: {
+	  sandbox: ['EmercomGZ'],
+    },
+	JagerHideout: {
+	  rezervbase: ['Cliff'],
+    },
+	PeacekeeperHideout: {
+	  laboratory: ['Cargo Elevator'],
+    },
+	CoyoteHideout: {
+	  laboratory: ['Parking Gate'],
+    },
+	JiangHu: {
+	  shoreline: ['ShorelineIslandInfil'],
+	  lighthouse: ['Grotto'],
+    },
+	GuidingLightHouse: {
+	  lighthouse: ['LighthouseDockInfil'],
+	  shoreline: ['ShoreLightHouse'],
+    },
+	SaferoomLabAccess: {
+	  laboratory: ['Parking Gate'],
+    },
+	CustomsLabsAccess: {
+	  laboratory: ['Parking Gate'],
+    },
+	FactoryLabAccess: {
+	  laboratory: ['Hangar Gate'],
+    },
+	WoodsLabAccess: {
+	  laboratory: ['Hangar Gate'],
+    },
+	MiraSniperReserveAccess: {
+	  rezervbase: ['Train Station'],
+    },
+	KlimovSniperReserveAccess: {
+	  rezervbase: ['Heating Pipe'],
+    },
+	WoodSniperReserveAccess: {
+	  rezervbase: ['Scav lands rail'],
+    },
+	VentShaftCat: {
+	  laboratory: ['Lab Vents'],
+    },
+  },
+	infiltrations_config: {
+	  additional_player_spawnpoints: {
+		tarkovstreets: {
+		  BasementHideoutInfil: {
+			Position: [46.99708, -0.2861767, 160.0706],
+			Rotation: 0,
+		  },
+		  CourtyardInfil: {
+			Position: [-155.7248, 2.333683, 501.309],
+			Rotation: 0,
+		  },
+		},
+		shoreline: {
+		  ShorelineIslandInfil: {
+			Position: [251.8555, -64.83669, 451.4385],
+			Rotation: 0,
+		  },
+		  ShoreLightHouse: {
+			Position: [-458.6102, -60.01037, 565.6651],
+			Rotation: 0,
+		  },
+		},
+		lighthouse: {
+		  LighthouseDockInfil: {
+			Position: [164.0056, 0.362507, -162.9624],
+			Rotation: 0,
+		  },
+		},
+		sandbox: {
+		  GroundZeroRampInfil: {
+			Position: [190.2278, 16.19613, 136.6885],
+			Rotation: 0,
+		  },
+		},
+		factory4_day: {
+		  FactorySewerDay: {
+			Position: [-26.0473, -4.770175, -43.32138],
+			Rotation: 0,
+		  },
+		},
+		factory4_night: {
+		  FactorySewerNight: {
+			Position: [-26.0473, -4.770175, -43.32138],
+			Rotation: 0,
+		  },
+		},
+		woods: {
+		  SawmillInfil: {
+			Position: [25.04485, -16.4373, 104.2446],
+			Rotation: 0,
+		  },
+		  SunkenInfill: {
+			Position: [-244.2993, 7.679533, -667.2446],
+			Rotation: 0,
+		  },
+		},
+	  },
+	},
+  offraid_positions: {
+    GroundZeroSniper: {
+      displayName: {
+        en: "Sniper Oneway Passage to GroundZero",
+      },
+    },
+	SewerToFactory: {
+      displayName: {
+        en: "Sewer Oneway Passage to Factory",
+      },
+    },
+	BasementDescent: {
+      displayName: {
+        en: "Slunk's Hideout",
+      },
+    },
+    KlimovShoppingMallExfil: {
+      displayName: {
+        en: 'Klimov Mall Rail Path',
+        // other languages...
+      },
+    },
+    NakataniCasinoElevator: {
+      displayName: {
+        en: 'Nakatani Casino Elevator',
+        // other languages...
+      },
+    },
+	MallCar: {
+      displayName: {
+        en: 'GroundZero Mall V-Ex',
+        // other languages...
+      },
+    },
+	LighthouseCityCheckpoint: {
+      displayName: {
+        en: 'Lighthouse City Checkpoint',
+        // other languages...
+      },
+    },
+	LighthouseKamchatskayaArch: {
+      displayName: {
+        en: 'Lighthouse Kamchatskaya Arch',
+        // other languages...
+      },
+    },
+	CustomsRAUFStreets: {
+      displayName: {
+        en: 'Customs RAUF Streets',
+        // other languages...
+      },
+    },
+	SkiersHideout: {
+      displayName: {
+        en: "Skier's Trailer Hideout",
+        // other languages...
+      },
+    },
+	DormShoppingCar: {
+      displayName: {
+        en: "Dorm's Shopping Car",
+        // other languages...
+      },
+    },
+	PassageToWoodOutskirts: {
+      displayName: {
+        en: "Passage To Wood Outskirt's",
+        // other languages...
+      },
+    },
+	GasWoodsBlock: {
+      displayName: {
+        en: "Gas Wood's Block",
+        // other languages...
+      },
+    },
+	FactoryToCustoms: {
+      displayName: {
+        en: "Factory Gate To Customs",
+        // other languages...
+      },
+    },
+	FactoryToWoods: {
+      displayName: {
+        en: "Factory Gate To Woods",
+        // other languages...
+      },
+    },
+	UNSawmillStreetsAccess: {
+      displayName: {
+        en: "UN Sawmill Streets Access",
+        // other languages...
+      },
+    },
+	PrimorskyScavTownTaxi: {
+      displayName: {
+        en: "Primorsky Scav-Town Taxi",
+        // other languages...
+      },
+    },
+	WoodsBridgeToPort: {
+      displayName: {
+        en: "Woods Bridge To Port",
+        // other languages...
+      },
+    },
+	CityCrashToResort: {
+      displayName: {
+        en: "City Crash To Resort",
+        // other languages...
+      },
+    },
+	VillagePath: {
+      displayName: {
+        en: "Village Path",
+        // other languages...
+      },
+    },
+	CoastalRoad: {
+      displayName: {
+        en: "South Coastal Road",
+        // other languages...
+      },
+    },
+	MilitaryTunnel: {
+      displayName: {
+        en: "Military Tunnel",
+        // other languages...
+      },
+    },
+	D2LabAccess: {
+      displayName: {
+        en: "D2 Lab Access",
+        // other languages...
+      },
+    },
+	RagmanHideout: {
+      displayName: {
+        en: "Ragman Hideout",
+        // other languages...
+      },
+    },
+	RefHideout: {
+      displayName: {
+        en: "Ref Hideout",
+        // other languages...
+      },
+    },
+	ScorpionHideout: {
+      displayName: {
+        en: "Scorpion Hideout",
+        // other languages...
+      },
+    },
+	MechanicHideout: {
+      displayName: {
+        en: "Mechanic Hideout",
+        // other languages...
+      },
+    },
+	JagerHideout: {
+      displayName: {
+        en: "Jager Hideout",
+        // other languages...
+      },
+    },
+	PeacekeeperHideout: {
+      displayName: {
+        en: "Peacekeeper Hideout",
+        // other languages...
+      },
+    },
+	CoyoteHideout: {
+      displayName: {
+        en: "Coyote Hideout",
+        // other languages...
+      },
+    },
+	JiangHu: {
+      displayName: {
+        en: "Jiang Hu Grotto",
+        // other languages...
+      },
+    },
+	GuidingLightHouse: {
+      displayName: {
+        en: "Guiding Light House",
+        // other languages...
+      },
+    },
+	SaferoomLabAccess: {
+      displayName: {
+        en: "Saferoom Lab Access '#11SR Card'",
+        // other languages...
+      },
+    },
+	CustomsLabsAccess: {
+      displayName: {
+        en: "Customs Lab Access 'Factory Key'",
+        // other languages...
+      },
+    },
+	FactoryLabAccess: {
+      displayName: {
+        en: "Factory Lab Access 'Factory Key'",
+        // other languages...
+      },
+    },
+	WoodsLabAccess: {
+      displayName: {
+        en: "Woods Lab Access 'ZB-14 Key'",
+        // other languages...
+      },
+    },
+	MiraSniperReserveAccess: {
+      displayName: {
+        en: "Mira Sniper Reserve Access 'Green Flare'",
+        // other languages...
+      },
+    },
+	KlimovSniperReserveAccess: {
+      displayName: {
+        en: "Klimov Sniper Reserve Access 'Green Flare'",
+        // other languages...
+      },
+    },
+	WoodSniperReserveAccess: {
+      displayName: {
+        en: "Woods Sniper Reserve Access 'Green Flare'",
+        // other languages...
+      },
+    },
+	VentShaftCat: {
+      displayName: {
+        en: "Vent Shaft Cat Burglar'",
+        // other languages...
+      },
+    },
+  },
+  exfiltrations_config: {},
+  exfiltrations_tooltips_template: '<color="green"><size=90%>$exfilDisplayName\n<size=60%><color="white">$offraidPositionDisplayName',
+  extracts_prompt_template: {
+    en: 'Extract to {0}',
+    fr: 'Extraction vers {0}',
+  },
+  transits_prompt_template: {
+    en: 'Transit to {0}',
+    fr: 'Transit vers {0}',
+  },
+}
